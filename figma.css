@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap");
+:root {
+  --primary-peach: #e7816b;
+  --primary-black: #1d1c1e;
+  --primary-white: #ffffff;
+
+  --secondary-peach: #ffad9b;
+  --secondary-dark-grey: #333136;
+  --secondary-light-grey: #f1f3f5;
+
+  --primary-font: "Jost";
+}
+body {
+  font-family: var(--primary-font);
+  background-color: #f2f2f2;
+}
+
+/*Typeography class open*/
+.a-title-1 {
+  color: var(--primary-black);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.a-title-2 {
+  color: var(--primary-black);
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.a-title-3 {
+  color: var(--secondary-dark-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.a-body-text {
+  color: var(--secondary-dark-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* Typography classes end */
+
+/* Button classes start */
+.a-btn {
+  height: 56px;
+  width: 152px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.a-btn-dark {
+  background-color: var(--primary-white);
+  color: var(--secondary-dark-grey);
+  margin-bottom: 20px;
+}
+.a-btn-dark:hover {
+  background-color: var(--secondary-peach);
+  color: var(--primary-white);
+}
+.a-btn-dark1 {
+  background-color: var(--secondary-peach);
+  color: var(--primary-white);
+}
+.a-btn-dark1:hover {
+  background-color: var(--primary-white);
+  color: var(--secondary-dark-grey);
+}
+.button {
+  place-items: center;
+  background-color: #e7816b;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 18%;
+  padding: 20px;
+  height: 200px;
+  border-radius: 10px;
+}
+/* Button classes end */
+
+/* navbar start */
+.a-navbar ul a {
+  text-decoration: none;
+  font-weight: 400;
+}
+.a-navbar img {
+  width: 20%;
+}
+/* navbar end */
+
+/* section-2 start */
+.section-2.container {
+  background: url();
+  background-repeat: no-repeat;
+  height: 640px;
+  background-position: bottom right;
+  border-radius: 15px;
+  background-size: cover;
+}
+.a-text-white {
+  color: white;
+}
+
+.section .container {
+  background: url("") url("");
+  background-size: 20% cover;
+}
+
+/* section-2 media query  */
+@media screen and (max-width: 60px) {
+  .section-2.container {
+    background: url(" ");
+    background-position: bottom center;
+  }
+}
+.a-title-1 {
+  font-size: 30px;
+}
+.a-title-2 {
+  font-size: 20px;
+}
