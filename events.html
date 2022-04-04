@@ -13,18 +13,11 @@
       draggable="true"
       ondragstart="imageDragStart()"
     />
-    <button
-      ondrag="elementDragged()"
-      ondragstart=""
-      onclick="hello(event)"
-      onmousemove="mouseMoved(event)"
-      draggable="true"
-    >
-      Submit
-    </button>
-    <button onclick="hello(event)" onmousemove="mouseMoved(event)">
-      Cancel
-    </button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quis earum
+      dolores nulla in id dolorum, praesentium cumque non neque excepturi illo,
+      obcaecati, quo tempora mollitia doloremque. Omnis, molestias sit.
+    </p>
     <script>
       function hello(e) {
         console.log(e);
@@ -33,12 +26,6 @@
 
       function mouseMoved(e) {
         console.log(e.target);
-      }
-      function ElementDraged() {
-        console.log("element drag");
-      }
-      function imageDragStart() {
-        console.log("image drag");
       }
     </script>
   </body>
