@@ -14,66 +14,6 @@
     <style></style>
   </head>
   <body>
-    <form
-      class="col-lg-6 col-sm-12 d-block mx-auto shadow p-5"
-      onsubmit="createProduct(event)"
-    >
-      <input
-        name="name"
-        class="form-control m-3"
-        type="text"
-        placeholder="Name"
-      />
-      <input
-        name="price"
-        class="form-control m-3"
-        type="text"
-        placeholder="Price"
-      />
-      <input
-        name="color"
-        class="form-control m-3"
-        type="text"
-        placeholder="Color"
-      />
-      <input
-        name="department"
-        class="form-control m-3"
-        type="text"
-        placeholder="Departement"
-      />
-      <button class="btn btn-primary">Create</button>
-    </form>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
-      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      async function createProduct(e) {
-        e.preventDefault();
-        try {
-          let formData = new FormData(e.target);
-          let data = {};
-          for (let [key, value] of formData) {
-            data[key] = value;
-          }
-          let response = await axios.post(
-            "https://62301895f113bfceed482126.mockapi.io/products",
-            data
-          );
-
-          if (response.status === 201) {
-            alert("New Product Created");
-            e.target.reset();
-          }
-        } catch (error) {
-          alert("Something went wrong");
-        }
-
-        // console.log(e.target);
-      }
-    </script>
+    <h2>hello world</h2>
   </body>
 </html>
